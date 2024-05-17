@@ -4,12 +4,12 @@ const path = require('path');
 
 // GET '/notes' to return notes.html.
 htmlRoutes.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/notes.html'));
+    res.sendFile(path.join(__dirname, '../public/assets/notes.html'));
 });
 
 // GET '*' (any routes) to return index.html.
 htmlRoutes.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
+    res.sendFile(path.join(__dirname, '../public/assets/index.html'));
 })
 
 module.exports = htmlRoutes;
